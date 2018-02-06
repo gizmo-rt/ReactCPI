@@ -12,7 +12,7 @@ import {
   View
 } from 'react-native';
 import codepush from 'react-native-code-push';
-import Push from 'appcenter-push';
+// import Push from 'appcenter-push';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -45,23 +45,23 @@ export default class App extends Component<Props> {
   }
 }
 
-Push.setListener({
-    onPushNotificationReceived(pushNotification) {
-        let message = pushNotification.message;
-        let title = pushNotification.title;
-
-        // Any custom name/value pairs added in the portal are in customProperties
-        if (pushNotification.customProperties && Object.keys(pushNotification.customProperties).length > 0) {
-            message += `\nCustom properties:\n${JSON.stringify(pushNotification.customProperties)}`;
-        }
-
-        if (AppState.currentState === 'active') {
-            Alert.alert(title, message);
-        } else {
-            Alert.alert(title, message);
-        }
-    }
-});
+// Push.setListener({
+//     onPushNotificationReceived(pushNotification) {
+//         let message = pushNotification.message;
+//         let title = pushNotification.title;
+//
+//         // Any custom name/value pairs added in the portal are in customProperties
+//         if (pushNotification.customProperties && Object.keys(pushNotification.customProperties).length > 0) {
+//             message += `\nCustom properties:\n${JSON.stringify(pushNotification.customProperties)}`;
+//         }
+//
+//         if (AppState.currentState === 'active') {
+//             Alert.alert(title, message);
+//         } else {
+//             Alert.alert(title, message);
+//         }
+//     }
+// });
 
 const styles = StyleSheet.create({
   container: {
