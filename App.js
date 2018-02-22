@@ -9,9 +9,10 @@ import {
   Platform,
   StyleSheet,
   Text,
-  View
+  View,
+    Image
 } from 'react-native';
-import codepush from 'react-native-code-push';
+//import codepush from 'react-native-code-push';
 // import Push from 'appcenter-push';
 
 const instructions = Platform.select({
@@ -25,12 +26,13 @@ type Props = {};
 export default class App extends Component<Props> {
 
   componentDidMount() {
-    codepush.sync({ updateDialog: true, installMode: codepush.InstallMode.IMMEDIATE });
+//    codepush.sync({ updateDialog: true, installMode: codepush.InstallMode.IMMEDIATE });
   }
 
   render() {
     return (
       <View style={styles.container}>
+        <Image source={{uri: 'https://image.ibb.co/iN832R/Logo.png'}} style={styles.backgroundImage} />
         <Text style={styles.welcome}>
           React native updated app installed
         </Text>
@@ -44,24 +46,6 @@ export default class App extends Component<Props> {
     );
   }
 }
-
-// Push.setListener({
-//     onPushNotificationReceived(pushNotification) {
-//         let message = pushNotification.message;
-//         let title = pushNotification.title;
-//
-//         // Any custom name/value pairs added in the portal are in customProperties
-//         if (pushNotification.customProperties && Object.keys(pushNotification.customProperties).length > 0) {
-//             message += `\nCustom properties:\n${JSON.stringify(pushNotification.customProperties)}`;
-//         }
-//
-//         if (AppState.currentState === 'active') {
-//             Alert.alert(title, message);
-//         } else {
-//             Alert.alert(title, message);
-//         }
-//     }
-// });
 
 const styles = StyleSheet.create({
   container: {
@@ -80,4 +64,9 @@ const styles = StyleSheet.create({
     color: '#333333',
     marginBottom: 5,
   },
+    backgroundImage: {
+        alignSelf: 'center',
+        width: 100,
+        height:100
+    }
 });
