@@ -697,7 +697,7 @@
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.Push = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -1214,7 +1214,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = ReactCPI/ReactCPI.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1228,7 +1227,7 @@
 					"-lc++",
 				);
 				PRODUCT_NAME = ReactCPI;
-				PROVISIONING_PROFILE = "6a546007-ce29-4ead-9bc5-81c6280cfc2a";
+				PROVISIONING_PROFILE = "e51ec1b3-9a9d-4c33-a0b6-5f0279ae39ea";
 				PROVISIONING_PROFILE_SPECIFIER = CustomApps;
 				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1239,7 +1238,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = ReactCPI/ReactCPI.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1252,7 +1250,7 @@
 					"-lc++",
 				);
 				PRODUCT_NAME = ReactCPI;
-				PROVISIONING_PROFILE = "6a546007-ce29-4ead-9bc5-81c6280cfc2a";
+				PROVISIONING_PROFILE = "e51ec1b3-9a9d-4c33-a0b6-5f0279ae39ea";
 				PROVISIONING_PROFILE_SPECIFIER = CustomApps;
 				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
