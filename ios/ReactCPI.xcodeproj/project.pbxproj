@@ -36,7 +36,6 @@
 		2D16E6881FA4F8E400B85C8A /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D16E6891FA4F8E400B85C8A /* libReact.a */; };
 		2DCD954D1E0B4F2C00145EB5 /* ReactCPITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ReactCPITests.m */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
-		76AEF4217E289CFB7631537A /* libPods-ReactCPI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3340AC4577A5D972F4A0FD9 /* libPods-ReactCPI.a */; };
 		78CF3ECC7622E000A2409ECA /* libPods-ReactCPI-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E068382963E0F20335F2477 /* libPods-ReactCPI-tvOSTests.a */; };
 		7D7BB2279FB94AD78EF3C6C2 /* AppCenter-Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = A35DBC4107974E9B832E0C10 /* AppCenter-Config.plist */; };
 		7E3F5D8C06D246CD2F89CF28 /* libPods-ReactCPITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA0738E61EFDE5B1563E9C5E /* libPods-ReactCPITests.a */; };
@@ -401,7 +400,6 @@
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				1087C115FD644DE28B65D596 /* libAppCenterReactNativePush.a in Frameworks */,
-				76AEF4217E289CFB7631537A /* libPods-ReactCPI.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
